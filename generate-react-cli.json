@@ -1,0 +1,22 @@
+{
+  "usesTypeScript": true,
+  "usesCssModule": false,
+  "cssPreprocessor": "css",
+  "testLibrary": "None",
+  "component": {
+    "atom": {
+      "path": "src/components/atoms",
+      "withStyle": false,
+      "withTest": false,
+      "withStory": true,
+      "withLazy": false
+    },
+    "default": {
+      "path": "src/components",
+      "withStyle": false,
+      "withTest": false,
+      "withStory": true,
+      "withLazy": false
+    }
+  }
+}
