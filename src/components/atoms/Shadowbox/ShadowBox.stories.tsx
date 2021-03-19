@@ -2,7 +2,7 @@ import React from "react"
 import { ShadowBox } from "./ShadowBox"
 import { Meta } from "@storybook/react/types-6-0"
 const meta: Meta = {
-  title: "atom/ShadowBox",
+  title: "atoms/ShadowBox",
   component: ShadowBox,
   parameters: {
     componentSubtitle: "Wrap other objects with a shadowbox to get a uniform looking element.",
