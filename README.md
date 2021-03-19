@@ -5,7 +5,7 @@ Atomic react components styled with tailwindcss
 ## Todo
 
 - [ ] Avatar
-- [ ] ShadowBox
+- [x] ShadowBox
 - [ ] Badge
 - [ ] Button / Link
 - [ ] Checkbox
