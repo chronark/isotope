@@ -1,2 +1,4 @@
-# Generated apollo client code
 gen/
+node_modules/
+dist/
+storybook-static/
