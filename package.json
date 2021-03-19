@@ -35,6 +35,7 @@
     "typescript": "^4.2.3"
   },
   "scripts": {
+    "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006",
     "fmt": "yarn lint && yarn format",
     "format": "prettier --loglevel warn --write . ",
