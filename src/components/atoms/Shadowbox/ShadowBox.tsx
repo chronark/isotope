@@ -10,25 +10,27 @@ export interface ShadowBox {
   size?: Size
 }
 
-const getPaddingFrom = (size?: Size): string => {
-  switch (size) {
-    case "small":
-      return "p-4"
-    case "medium":
-      return "p-8"
-    case "large":
-      return "p-16"
-    default:
-      return "p-8"
-  }
-}
-
 /**
  * Wrap a component inside a `ShadowBox` to give it a distinct shadow without having to worry
  * about spacing etc. yourself.
  */
-export const ShadowBox: React.FC<ShadowBox> = ({ children, className, size }) => (
-  <div className={`${getPaddingFrom(size)} bg-white rounded shadow-2xl`}>
-    <div className={className}>{children}</div>
-  </div>
-)
+export const ShadowBox: React.FC<ShadowBox> = ({ children, className, size }) => {
+  const getPaddingFrom = (size?: Size): string => {
+    switch (size) {
+      case "small":
+        return "p-4"
+      case "medium":
+        return "p-8"
+      case "large":
+        return "p-12"
+      default:
+        return "p-8"
+    }
+  }
+
+  return (
+    <div className={`${getPaddingFrom(size)} bg-white rounded shadow-2xl`}>
+      <div className={className}>{children}</div>
+    </div>
+  )
+}
