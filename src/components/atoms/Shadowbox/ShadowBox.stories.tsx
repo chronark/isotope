@@ -18,7 +18,7 @@ Control.args = {
 }
 
 export const Sizes = (): JSX.Element => (
-  <div className="flex items-center justify-between p-8">
+  <div className="flex items-center justify-between">
     <ShadowBox size="small">Small</ShadowBox>
     <ShadowBox size="medium">Medium</ShadowBox>
     <ShadowBox size="large">Large</ShadowBox>

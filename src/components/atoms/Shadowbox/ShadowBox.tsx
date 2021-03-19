@@ -18,18 +18,18 @@ export const ShadowBox: React.FC<ShadowBox> = ({ children, className, size }) =>
   const getPaddingFrom = (size?: Size): string => {
     switch (size) {
       case "small":
-        return "p-4"
+        return "p-4 m-4"
       case "medium":
-        return "p-8"
+        return "p-8 m-8"
       case "large":
-        return "p-12"
+        return "p-12 m-12"
       default:
-        return "p-8"
+        return "p-8 m-8"
     }
   }
 
   return (
-    <div className={`${getPaddingFrom(size)} bg-white rounded shadow-2xl`}>
+    <div className={`${getPaddingFrom(size)} bg-white rounded shadow-2xl flex items-center justify-center`}>
       <div className={className}>{children}</div>
     </div>
   )
