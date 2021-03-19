@@ -1,4 +1,9 @@
 {
+  "version": "0.1.0",
+  "author": {
+    "name": "Andreas Thomas",
+    "email": "dev@chronark.com"
+  },
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@mdx-js/react": "^1.6.22",
@@ -12,11 +17,15 @@
     "@tailwindcss/postcss7-compat": "^2.0.4",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
+    "@typescript-eslint/parser": "^4.18.0",
     "autoprefixer": "^9",
     "babel-loader": "^8.2.2",
     "chromatic": "^5.7.0",
     "core-js": "^3.9.1",
     "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
     "postcss": "^7",
     "prettier": "^2.2.1",
     "prop-types": "^15.7.2",
@@ -27,11 +36,12 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
     "fmt": "yarn lint && yarn format",
     "format": "prettier --loglevel warn --write . ",
     "lint": "eslint . --ext ts --ext tsx --ext js --fix",
-    "chromatic": "chromatic --project-token 6111260492db",
     "type-check": "tsc --pretty --noEmit"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.18.0"
   }
 }

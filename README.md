@@ -1,10 +1,8 @@
 # isotope
+
 Atomic react components styled with tailwindcss
 
-
-
 ## Todo
-
 
 - [ ] Avatar
 - [ ] ShadowBox
@@ -20,11 +18,11 @@ Atomic react components styled with tailwindcss
 - [ ] Icon
 - [ ] Image
 - [ ] Input
-    - Text
-    - Area
-    - Number
-    - Date
-    - Time
+  - Text
+  - Area
+  - Number
+  - Date
+  - Time
 - [ ] Spinner
 - [ ] Menu
 - [ ] Modal
@@ -43,8 +41,4 @@ Atomic react components styled with tailwindcss
 - [ ] Toggle
 - [ ] Tooltip
 
-
-
-
-- [ ] 
-
+- [ ]

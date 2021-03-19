@@ -1,11 +1,14 @@
 import React from "react"
 import { ShadowBox } from "./ShadowBox"
 import { Meta } from "@storybook/react/types-6-0"
-export default {
+const meta: Meta = {
   title: "atom/ShadowBox",
   component: ShadowBox,
-  subComponents: { ShadowBox },
-} as Meta
+  parameters: {
+    componentSubtitle: "Wrap other objects with a shadowbox to get a uniform looking element.",
+  },
+}
+export default meta
 
 const Template = (args) => <ShadowBox {...args} />
 
@@ -14,19 +17,17 @@ Control.args = {
   children: "I am a box",
 }
 
-export const Small = Template.bind({})
-Small.args = {
-  children: "I am a small box",
-  size: "small",
-}
-export const Medium = Template.bind({})
-Medium.args = {
-  children: "I am a medium box",
-  size: "medium",
-}
+export const Sizes = (): JSX.Element => (
+  <div className="flex items-center justify-between">
+    <ShadowBox size="small">Small</ShadowBox>
+    <ShadowBox size="medium">Medium</ShadowBox>
+    <ShadowBox size="large">Large</ShadowBox>
+  </div>
+)
 
-export const Large = Template.bind({})
-Large.args = {
-  children: "I am a large box",
-  size: "large",
+Sizes.parameters = {
+  docs: {
+    // The story now contains a description
+    storyDescription: "3 sizes are supported.",
+  },
 }
