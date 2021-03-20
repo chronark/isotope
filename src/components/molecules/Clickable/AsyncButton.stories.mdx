@@ -1,0 +1,23 @@
+import { Meta, Story, Canvas, Preview, ArgsTable } from "@storybook/addon-docs/blocks"
+
+import { AsyncButton } from "./AsyncButton"
+
+<Meta title="molecules/AsyncButton" component={AsyncButton} />
+
+# AsyncButton
+
+<Preview>
+  <Story name="standard">
+    <AsyncButton
+      label="Async"
+      onClick={async () => {
+        await new Promise((resolve) => setTimeout(resolve, 2000))
+        console.log("Done")
+      }}
+    />
+  </Story>
+</Preview>
+
+## Arguments
+
+<ArgsTable of={AsyncButton} />

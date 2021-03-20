@@ -7,7 +7,7 @@ Atomic react components styled with tailwindcss
 - [ ] Avatar
 - [x] ShadowBox
 - [ ] Badge
-- [ ] Button / Link
+- [x] Button / Link
 - [ ] Checkbox
 - [ ] Collapse
 - [ ] Description
@@ -23,7 +23,7 @@ Atomic react components styled with tailwindcss
   - Number
   - Date
   - Time
-- [ ] Spinner
+- [x] Spinner
 - [ ] Menu
 - [ ] Modal
 - [ ] Popover

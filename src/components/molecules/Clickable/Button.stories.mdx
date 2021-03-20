@@ -6,8 +6,6 @@ import { Button } from "./Button"
 
 # Button
 
-## Styling for clickable elements
-
 <Preview>
   <Story name="standard">
     <Button size="medium" label="Button" />
@@ -17,19 +15,3 @@ import { Button } from "./Button"
 ## Arguments
 
 <ArgsTable of={Button} />
-
-### Loading
-
-Click to trigger a fake async call.
-
-<Preview>
-  <Story name="loading" classname="inset-flex">
-    <Button label="Sync" onClickSync={() => {}} />
-    <Button
-      label="Async"
-      onClickAsync={async () => {
-        await new Promise((resolve) => setTimeout(resolve, 2000))
-      }}
-    />
-  </Story>
-</Preview>
